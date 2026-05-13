@@ -1,0 +1,37 @@
+#define primary rgb(15,15,25)
+#define secondary rgb(30,30,40)
+#define terziary rgb(75,75,90)
+#define borders secondary
+
+* {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17;
+}
+
+body {
+    background-color: primary;
+}
+
+hr {
+    border: unset;
+    border-left: solid borders 1px;
+    width: 0;
+    height: 75%;
+    margin: 0 15px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.sub {
+    font-size: 0.5em;
+    color: gray;
+}
+
+#include "styles/navbar.css"
+#include "styles/sidebar.css"
+#include "styles/btn.css"
+#include "styles/pcbox.css"

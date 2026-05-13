@@ -1,0 +1,6 @@
+{
+    "classi" : "pages/classi.php",
+    "pcs" : "pages/pcs.php",
+    "404" : "pages/404.php",
+    "pc" : "pages/pc.php"
+}

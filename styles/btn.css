@@ -1,0 +1,10 @@
+.btn {
+    background-color: primary;
+    border: solid borders 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: secondary;
+}

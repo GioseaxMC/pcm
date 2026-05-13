@@ -1,0 +1,1 @@
+<p><span style="color:red">error:</span> couldn't include '<? echo $_page ?>'</p>
