@@ -62,7 +62,7 @@ def preprocess_file(filename):
 def save_file(filepath, result):
     print("sending...")
     import paramiko
-    import minify_html
+    import htmlmin
 
     with open("ign.db.pass", "r") as fd:
         dbp = fd.read()
@@ -77,7 +77,7 @@ def save_file(filepath, result):
     while "\n\n" in result:
         result = result.replace("\n\n", "\n")
     if not DEBUG:
-        result = minify_html.minify(result, minify_js=True, minify_css=True)
+        result = htmlmin.minify(result, remove_comments=True, remove_empty_space=True)
         result = result.replace(";\n", ";")
 
     sftp = ssh.open_sftp()
