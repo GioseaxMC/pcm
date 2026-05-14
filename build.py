@@ -65,7 +65,7 @@ def save_file(filepath, result):
     import htmlmin
 
     with open("ign.db.pass", "r") as fd:
-        dbp = fd.read()
+        dbp = fd.read().strip()
 
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
